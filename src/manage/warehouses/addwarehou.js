@@ -69,24 +69,6 @@ export const AddWarehouse = () => {
       
       <Row className="mb-3">
         <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>ID</Form.Label>
-          <InputGroup hasValidation>
-          <Col><Form.Control
-              type="number"
-              placeholder="ID"
-              style={{width:'      15cm'}}
-              aria-describedby="inputGroupPrepend"
-              required
-            /></Col>
-            <Form.Control.Feedback type="invalid">
-              Please enter ID.
-            </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-      </Row>
-      
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="validationCustomUsername">
           <Form.Label>Status</Form.Label>
           <InputGroup hasValidation>
           <Col><Form.Control
@@ -99,20 +81,6 @@ export const AddWarehouse = () => {
             <Form.Control.Feedback type="invalid">
               Please enter your ID.
             </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-      </Row>
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="">
-          <Form.Label>Subervisor ID</Form.Label>
-          <InputGroup >
-          <Col><Form.Control
-              type="number"
-              placeholder="Subervisor ID"
-              style={{width:'      15cm'}}
-              aria-describedby="inputGroupPrepend"
-              
-            /></Col>
           </InputGroup>
         </Form.Group>
       </Row>

@@ -29,7 +29,7 @@ export const UpdateSuber = () => {
     <div className='register1'>
       
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
-    <Form.Label>Add Subervisor</Form.Label>
+    <Form.Label>Update Subervisor</Form.Label>
   
       <Row className="mb-3">
         <Form.Group   md="4" controlId="validationCustomUsername">
@@ -38,7 +38,7 @@ export const UpdateSuber = () => {
             <Col>
             <Form.Control
               type="text"
-              
+              required
               placeholder="Email"
               style={{width:'  15cm'}}
               aria-describedby="inputGroupPrepend"
@@ -62,7 +62,7 @@ export const UpdateSuber = () => {
               placeholder="Password"
               style={{width:' 15cm'}}
               aria-describedby="inputGroupPrepend"
-              
+              required
             />
             </Col>
             <Form.Control.Feedback type="invalid">
@@ -81,7 +81,7 @@ export const UpdateSuber = () => {
               style={{width:'      15cm'}}
               placeholder="Phone"
               aria-describedby="inputGroupPrepend"
-              
+              required
             />
             </Col>
             <Form.Control.Feedback type="invalid">
@@ -119,7 +119,7 @@ export const UpdateSuber = () => {
               placeholder="Phone"
               style={{width:'      15cm'}}
               aria-describedby="inputGroupPrepend"
-              
+              required
             />
             </Col>
             <Form.Control.Feedback type="invalid">
@@ -137,7 +137,7 @@ export const UpdateSuber = () => {
               placeholder="Status"
               style={{width:'      15cm'}}
               aria-describedby="inputGroupPrepend"
-              
+              required
             /></Col>
             <Form.Control.Feedback type="invalid">
               Please enter your ID.
@@ -145,22 +145,8 @@ export const UpdateSuber = () => {
           </InputGroup>
         </Form.Group>
       </Row>
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="">
-          <Form.Label>Warehouse ID</Form.Label>
-          <InputGroup >
-          <Col>
-            <Form.Control
-              type="number"
-              placeholder="Warehouse ID"
-              style={{width:'      15cm'}}
-              aria-describedby="inputGroupPrepend"
-              
-            /></Col>
-          </InputGroup>
-        </Form.Group>
-      </Row>
-      <Button variant="dark" type="submit">Add</Button>
+  
+      <Button variant="dark" type="submit">Update</Button>
       </Form>
     </div></div>
     </>

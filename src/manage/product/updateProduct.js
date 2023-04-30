@@ -50,24 +50,7 @@ export const UpdateProduct = () => {
           </InputGroup>
         </Form.Group>
       </Row>
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>Product ID</Form.Label>
-          <InputGroup hasValidation>
-            <Col >
-            <Form.Control
-              type="Number"
-              placeholder="Product ID"
-              style={{width:'    15cm'}}
-              aria-describedby="inputGroupPrepend"
-              required
-            /></Col>
-            <Form.Control.Feedback type="invalid">
-              Invalid.
-            </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-      </Row>
+      
       <Row className="mb-3">
         <Form.Group   md="4" controlId="validationCustomUsername">
           <Form.Label>Description</Form.Label>
@@ -92,7 +75,7 @@ export const UpdateProduct = () => {
           <InputGroup hasValidation>
             <Col >
             <Form.Control
-              type="text"
+              type="file"
               placeholder="Image URL"
               style={{width:'    15cm'}}
               aria-describedby="inputGroupPrepend"
@@ -123,7 +106,25 @@ export const UpdateProduct = () => {
           </InputGroup>
         </Form.Group>
       </Row>
-      <Button variant="dark" type="submit">Add</Button>
+      <Row className="mb-3">
+        <Form.Group   md="4" controlId="validationCustomUsername">
+          <Form.Label>Stock</Form.Label>
+          <InputGroup hasValidation>
+            <Col >
+            <Form.Control
+              type="Number"
+              placeholder="Stock"
+              style={{width:'      15cm'}}
+              aria-describedby="inputGroupPrepend"
+              required
+            /></Col>
+            <Form.Control.Feedback type="invalid">
+              Invalid.
+            </Form.Control.Feedback>
+          </InputGroup>
+        </Form.Group>
+      </Row>
+      <Button variant="dark" type="submit">Update</Button>
     </Form>
     </div></div>
     </>

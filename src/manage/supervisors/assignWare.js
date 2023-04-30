@@ -1,11 +1,12 @@
+import { AdminHeader } from "../../pages/shared/header/admiHeader";
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
-import'../../css/login.css'
-export const Login = () => {
+import'../../css/register.css'
+export const AssignbSuberv = () => {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -13,10 +14,9 @@ export const Login = () => {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
-      
     }
     else{
-      alert("you are loged")
+      alert("Added")
 
     }
 
@@ -24,55 +24,51 @@ export const Login = () => {
   };
 
   return (
-    <div className='login'>
+    <><AdminHeader/>
+    <div className='register'>
       <br></br>
-      <div className='login1'>
-      <Form noValidate validated={validated} onSubmit={handleSubmit}>
-  
-  
+    <div className='register1'>
+      
+    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+    <Form.Label>Assign Subervisor</Form.Label>
       <Row className="mb-3">
         <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>Email</Form.Label>
-          <InputGroup hasValidation>
-            <Col>
-            <Form.Control
-              type="text"
-              
-              placeholder="Email"
-              style={{width:'  9cm'}}
-              aria-describedby="inputGroupPrepend"
-              required
-            />
-          </Col>
-            
-            <Form.Control.Feedback type="invalid">
-              Invalid Email.
-            </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-      </Row>
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>ID</Form.Label>
           <InputGroup hasValidation>
           <Col>
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              style={{width:' 9cm'}}
+          <Form.Control
+              type="number"
+              placeholder="ID"
+              style={{width:'      15cm'}}
               aria-describedby="inputGroupPrepend"
               required
             />
             </Col>
             <Form.Control.Feedback type="invalid">
-              Please choose a password.
+              Please enter your ID.
             </Form.Control.Feedback>
           </InputGroup>
         </Form.Group>
       </Row>
-      <Button variant="dark" type="submit">Login</Button>
+      
+      <Row className="mb-3">
+        <Form.Group   md="4" controlId="">
+          <Form.Label>Warehouse ID</Form.Label>
+          <InputGroup >
+          <Col>
+            <Form.Control
+              type="number"
+              placeholder="Warehouse ID"
+              style={{width:'      15cm'}}
+              aria-describedby="inputGroupPrepend"
+              required
+            /></Col>
+          </InputGroup>
+        </Form.Group>
+      </Row>
+      <Button variant="dark" type="submit">Add</Button>
       </Form>
-    </div>
-    </div>
+    </div></div>
+    </>
   );
 }

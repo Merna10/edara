@@ -3,7 +3,6 @@ import { ProductList } from "./manage/product/productList";
 import { SvProductList } from "./manage/svProduct/superVproductList ";
 import { Request } from "./manage/svProduct/request";
 import { Login } from "./pages/auth/login";
-import { Register } from "./pages/auth/register";
 import { AddWarehouse } from "./manage/warehouses/addwarehou";
 import { UpdateWarehous } from "./manage/warehouses/updatewarehou";
 import { SvHome } from "./pages/home/svhome";
@@ -12,6 +11,7 @@ import { App } from "./App";
 import { AddProduct } from "./manage/product/addProduct";
 import { UpdateProduct } from "./manage/product/updateProduct";
 import { AddSuberv } from "./manage/supervisors/addSv";
+import { AssignbSuberv } from "./manage/supervisors/assignWare";
 import { UpdateSuber } from "./manage/supervisors/updateSv";
 import { WhList } from "./manage/warehouses/whList";
 import { SvList } from "./manage/supervisors/svList";
@@ -40,12 +40,12 @@ export const routes = createBrowserRouter([
         element: <SvHome />,
       },
       {
-        path: "/register",
-        element: <Register />,
-      },
-      {
         path: "/addsv",
         element: <AddSuberv />,
+      },
+      {
+        path: "/assign",
+        element: <AssignbSuberv />,
       },
       {
         path: "/svList",

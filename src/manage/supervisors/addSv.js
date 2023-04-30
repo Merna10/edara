@@ -93,30 +93,11 @@ export const AddSuberv = () => {
       </Row>
       <Row className="mb-3">
         <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>ID</Form.Label>
-          <InputGroup hasValidation>
-          <Col>
-          <Form.Control
-              type="number"
-              placeholder="ID"
-              style={{width:'      15cm'}}
-              aria-describedby="inputGroupPrepend"
-              required
-            />
-            </Col>
-            <Form.Control.Feedback type="invalid">
-              Please enter your ID.
-            </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-      </Row>
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>Phone</Form.Label>
+          <Form.Label>Type</Form.Label>
           <InputGroup hasValidation>
           <Col>
             <Form.Control
-              type="number"
+              type="text"
               placeholder="Phone"
               style={{width:'      15cm'}}
               aria-describedby="inputGroupPrepend"
@@ -124,11 +105,12 @@ export const AddSuberv = () => {
             />
             </Col>
             <Form.Control.Feedback type="invalid">
-              Please enter your phone.
+              Please enter Type.
             </Form.Control.Feedback>
           </InputGroup>
         </Form.Group>
       </Row>
+      
       <Row className="mb-3">
         <Form.Group   md="4" controlId="validationCustomUsername">
           <Form.Label>Status</Form.Label>
@@ -143,21 +125,6 @@ export const AddSuberv = () => {
             <Form.Control.Feedback type="invalid">
               Please enter your ID.
             </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-      </Row>
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="">
-          <Form.Label>Warehouse ID</Form.Label>
-          <InputGroup >
-          <Col>
-            <Form.Control
-              type="number"
-              placeholder="Warehouse ID"
-              style={{width:'      15cm'}}
-              aria-describedby="inputGroupPrepend"
-              
-            /></Col>
           </InputGroup>
         </Form.Group>
       </Row>

@@ -37,7 +37,7 @@ export const UpdateWarehous = () => {
           <InputGroup hasValidation><Col>
             <Form.Control
               type="text"
-              
+              required
               placeholder="Name"
               style={{width:'  15cm'}}
               aria-describedby="inputGroupPrepend"
@@ -58,28 +58,10 @@ export const UpdateWarehous = () => {
               placeholder="Location"
               style={{width:' 15cm'}}
               aria-describedby="inputGroupPrepend"
-              
-            /></Col>
-            <Form.Control.Feedback type="invalid">
-              Please choose a password.
-            </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-      </Row>
-      
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>ID</Form.Label>
-          <InputGroup hasValidation>
-          <Col><Form.Control
-              type="number"
-              placeholder="ID"
-              style={{width:'      15cm'}}
-              aria-describedby="inputGroupPrepend"
               required
             /></Col>
             <Form.Control.Feedback type="invalid">
-              Please enter ID.
+              Please choose a password.
             </Form.Control.Feedback>
           </InputGroup>
         </Form.Group>
@@ -94,29 +76,16 @@ export const UpdateWarehous = () => {
               placeholder="Status"
               style={{width:'      15cm'}}
               aria-describedby="inputGroupPrepend"
-              
+              required
             /></Col>
             <Form.Control.Feedback type="invalid">
-              Please enter your ID.
+              Please enter Status.
             </Form.Control.Feedback>
           </InputGroup>
         </Form.Group>
       </Row>
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="">
-          <Form.Label>Subervisor ID</Form.Label>
-          <InputGroup >
-          <Col><Form.Control
-              type="number"
-              placeholder="Subervisor ID"
-              style={{width:'      15cm'}}
-              aria-describedby="inputGroupPrepend"
-              required
-            /></Col>
-          </InputGroup>
-        </Form.Group>
-      </Row>
-      <Button variant="dark" type="submit">Add</Button>
+      
+      <Button variant="dark" type="submit">Update</Button>
       </Form>
     </div></div>
     </>

@@ -32,24 +32,7 @@ export const Request = () => {
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
     <Form.Label>Update Product</Form.Label>
       
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>Name</Form.Label>
-          <InputGroup hasValidation>
-            <Col >
-            <Form.Control
-              type="text"
-              placeholder="Name"
-              style={{width:'      12cm'}}
-              aria-describedby="inputGroupPrepend"
-              
-            /></Col>
-            <Form.Control.Feedback type="invalid">
-              Invalid Name.
-            </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-      </Row>
+      
       <Row className="mb-3">
         <Form.Group   md="4" controlId="validationCustomUsername">
           <Form.Label>Product ID</Form.Label>
@@ -70,12 +53,12 @@ export const Request = () => {
       </Row>
       <Row className="mb-3">
         <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>Warehouse ID</Form.Label>
+          <Form.Label>Supervisor ID</Form.Label>
           <InputGroup hasValidation>
             <Col >
             <Form.Control
               type="Number"
-              placeholder="Warehouse ID"
+              placeholder="Supervisor ID"
               style={{width:'      12cm'}}
               aria-describedby="inputGroupPrepend"
               required
@@ -86,27 +69,10 @@ export const Request = () => {
           </InputGroup>
         </Form.Group>
       </Row>
+      
       <Row className="mb-3">
         <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>Change Stock From</Form.Label>
-          <InputGroup hasValidation>
-            <Col >
-            <Form.Control
-              type="Number"
-              placeholder="Stock"
-              style={{width:'      12cm'}}
-              aria-describedby="inputGroupPrepend"
-              required
-            /></Col>
-            <Form.Control.Feedback type="invalid">
-              Invalid.
-            </Form.Control.Feedback>
-          </InputGroup>
-        </Form.Group>
-      </Row>
-      <Row className="mb-3">
-        <Form.Group   md="4" controlId="validationCustomUsername">
-          <Form.Label>To</Form.Label>
+          <Form.Label>Change Stock To</Form.Label>
           <InputGroup hasValidation>
             <Col >
             <Form.Control
